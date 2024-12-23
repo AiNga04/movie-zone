@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem Phim Online</title>
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark shadow-sm sticky-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-warning fw-bold" href="#">MovieZone</a>
+
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Search bar in center -->
+                <form class="search-form mx-auto" role="search">
+                    <input class="form-control" type="search" placeholder="Tìm phim, diễn viên..." aria-label="Search">
+                    <button class="btn-search" type="submit" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+                <!-- Login/Sign-up buttons -->
+                <div class="auth-buttons div-order">
+                    <a href="#" class="btn btn-outline-light me-2 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-box-arrow-in-right me-2" viewBox="0 0 18 18">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                            <path fill-rule="evenodd"
+                                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg>
+                        Đăng nhập</a>
+                    <a href="#" class="btn btn-warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-person-plus-fill me-2" viewBox="0 0 18 18">
+                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            <path fill-rule="evenodd"
+                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                        Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="main-header">
+        <section>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item border ">
+                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item border ms-n1">
+                                <a class="nav-link" href="#">Phim bộ</a>
+                            </li>
+                            <li class="nav-item border ms-n1">
+                                <a class="nav-link" href="#">Phim lẻ</a>
+                            </li>
+                            <li class="nav-item border ms-n1">
+                                <a class="nav-link" href="#">Hoạt hình</a>
+                            </li>
+                            <li class="nav-item border ms-n1">
+                                <a class="nav-link" href="#">Thể loại</a>
+                            </li>
+                            <li class="nav-item border ms-n1">
+                                <a class="nav-link" href="#">Quốc gia</a>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="container-fluid p-0">
+            <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel Indicators -->
+                <ol class="carousel-indicators list-unstyled">
+                    <li data-bs-target="#movieCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#movieCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#movieCarousel" data-bs-slide-to="2"></li>
+                </ol>
+
+                <!-- Carousel Slides -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="img/movie-1.jpg" class="d-block w-100" alt="Avengers: Endgame">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-white">Avengers: Endgame</h2>
+                            <p class="text-light">Trận chiến cuối cùng của các siêu anh hùng để cứu lấy vũ trụ.</p>
+                            <a href="#" class="btn btn-primary btn-lg">Xem ngay</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="img/movie-2.jpg" class="d-block w-100" alt="Interstellar">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-white">Interstellar</h2>
+                            <p class="text-light">Cuộc hành trình xuyên qua các chiều không gian để tìm kiếm tương lai
+                                cho nhân
+                                loại.</p>
+                            <a href="#" class="btn btn-primary btn-lg">Xem ngay</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img src="img/movie-3.jpg" class="d-block w-100" alt="The Conjuring">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-white">The Conjuring</h2>
+                            <p class="text-light">Những bí ẩn ma quái đầy ám ảnh dựa trên câu chuyện có thật.</p>
+                            <a href="#" class="btn btn-primary btn-lg">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+
+
+    </header>
+    <!-- Header end -->
+
+    <!-- Main -->
+    <main class="main">
+        <div class="container home">
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-7"></div>
+            </div>
+        </div>
+    </main>
+    <!-- Main end -->
+
+    <!-- Footer -->
+    <footer></footer>
+    <!-- Footer end -->
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
