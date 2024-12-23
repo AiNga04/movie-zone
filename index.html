@@ -16,7 +16,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-dark shadow-sm sticky-top">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Logo -->
             <a class="navbar-brand text-warning fw-bold" href="#">MovieZone</a>
 
@@ -61,41 +61,73 @@
     </nav>
 
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header mt-0">
         <section>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light shadow" style="background-color: rgb(30 58 87);">
+                <div class="container">
+                    <!-- Toggler -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        data-bs-target="#navbarTogglerMovie" aria-controls="navbarTogglerMovie" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse" id="navbarTogglerMovie">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item border ">
-                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Trang chủ</a>
                             </li>
-                            <li class="nav-item border ms-n1">
-                                <a class="nav-link" href="#">Phim bộ</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Phim bộ</a>
                             </li>
-                            <li class="nav-item border ms-n1">
-                                <a class="nav-link" href="#">Phim lẻ</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Phim lẻ</a>
                             </li>
-                            <li class="nav-item border ms-n1">
-                                <a class="nav-link" href="#">Hoạt hình</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Hoạt hình</a>
                             </li>
-                            <li class="nav-item border ms-n1">
-                                <a class="nav-link" href="#">Thể loại</a>
+                            <!-- Dropdown for Genres -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="genreDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Thể loại
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Hành động</a></li>
+                                    <li><a class="dropdown-item" href="#">Tình cảm</a></li>
+                                    <li><a class="dropdown-item" href="#">Kinh dị</a></li>
+                                    <li><a class="dropdown-item" href="#">Viễn tưởng</a></li>
+                                    <li><a class="dropdown-item" href="#">Hài hước</a></li>
+                                    <li><a class="dropdown-item" href="#">Phim cổ trang</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item border ms-n1">
-                                <a class="nav-link" href="#">Quốc gia</a>
+                            <!-- Dropdown for Countries -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="countryDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Quốc gia
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Việt Nam</a></li>
+                                    <li><a class="dropdown-item" href="#">Hàn Quốc</a></li>
+                                    <li><a class="dropdown-item" href="#">Mỹ</a></li>
+                                    <li><a class="dropdown-item" href="#">Trung Quốc</a></li>
+                                    <li><a class="dropdown-item" href="#">Nhật Bản</a></li>
+                                    <li><a class="dropdown-item" href="#">Thái Lan</a></li>
+                                    <li><a class="dropdown-item" href="#">Âu - Mỹ</a></li>
+                                </ul>
                             </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
         </section>
 
-        <section class="container-fluid p-0">
+
+
+
+        <section class="container p-0 mt-2">
             <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
                 <!-- Carousel Indicators -->
                 <ol class="carousel-indicators list-unstyled">
@@ -105,7 +137,7 @@
                 </ol>
 
                 <!-- Carousel Slides -->
-                <div class="carousel-inner">
+                <div class="carousel-inner rounded-2">
                     <!-- Slide 1 -->
                     <div class="carousel-item active">
                         <img src="img/movie-1.jpg" class="d-block w-100" alt="Avengers: Endgame">
