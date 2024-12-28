@@ -1,0 +1,28 @@
+.note {
+  background: #fef5c4;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .note--desc {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 2px;
+    color: #212529;
+  }
+}
+
+@media (max-width: 768px) {
+  .note--desc {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .note--desc {
+    font-size: 10px !important;
+  }
+}

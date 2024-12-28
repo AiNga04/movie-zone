@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-width: 350px;
+  color: #fff;
+}
+
+.background.container {
+  background: #151d25;
+}
+
+@import "navbar";
+@import "main";
+@import "header";
+@import "checkbox";
+@import "footer";
