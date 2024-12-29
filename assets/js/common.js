@@ -163,7 +163,7 @@ function addFooter() {
             </div>
             <hr>
             <div class="row bottom">
-                <p>© 2024 Ai Nga. Tất cả quyền được bảo lưu.</p>
+                <p>© 2024 Ái Nga. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>    `);
 }

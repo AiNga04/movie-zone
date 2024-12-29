@@ -1,8 +1,12 @@
 /*============= Common =============*/
 .title {
   color: #ff4e50;
-  font-style: 1.7rem;
+  font-style: 2rem;
   font-weight: bold;
+}
+
+.hidden {
+  display: none;
 }
 /*============= Carousel =============*/
 #movieCarousel {
@@ -98,6 +102,8 @@
   opacity: 1;
 }
 
+/*============= Phim hot =============*/
+
 .movie-list {
   display: flex;
   gap: 10px;
@@ -159,6 +165,15 @@
         padding: 0 10px;
         color: #f8f9fa;
       }
+    }
+  }
+
+  .btn-control {
+    display: flex;
+    justify-content: space-between;
+    .btn-custom {
+      color: #fff;
+      background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     }
   }
 }

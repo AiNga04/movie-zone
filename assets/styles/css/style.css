@@ -128,8 +128,12 @@ body {
 /*============= Common =============*/
 .title {
   color: #ff4e50;
-  font-style: 1.7rem;
+  font-style: 2rem;
   font-weight: bold;
+}
+
+.hidden {
+  display: none;
 }
 
 /*============= Carousel =============*/
@@ -210,6 +214,7 @@ body {
   opacity: 1;
 }
 
+/*============= Phim hot =============*/
 .movie-list {
   display: flex;
   gap: 10px;
@@ -263,6 +268,14 @@ body {
 .movie-hot .movie-item .movie-name p {
   padding: 0 10px;
   color: #f8f9fa;
+}
+.movie-hot .btn-control {
+  display: flex;
+  justify-content: space-between;
+}
+.movie-hot .btn-control .btn-custom {
+  color: #fff;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 /* Responsive */
