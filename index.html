@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- add JS -->
     <script src="./assets/js/common.js"></script>
-    <!-- <script src="./data/movie.js"></script> -->
-    <script src="./data/hot.js"></script>
+    <script src="./data/movie.js"></script>
+    <!-- <script src="./data/hot.js"></script>
     <script src="./data/series.js"></script>
     <script src="./data/single.js"></script>
     <script src="./data/cartoon.js"></script>
-    <script src="./data/tv-shows.js"></script>
-    <script src="./data/top-views.js"></script>
+    <script src="./data/tv-shows.js"></script> -->
+    <!-- <script src="./data/top-views.js"></script> -->
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/styles/css/style.css">
@@ -199,10 +199,12 @@
         <!-- Phim hot -->
         <div class="pt-3">
             <div class="row">
-                <div class="col-12">
+                <div class="movie-control">
                     <h5 class="title">Phim Hot
                         <img src="assets/icons/flash.svg" alt="Phim hot" height="27.2" width="27.2">
                     </h5>
+
+                    <a type="button" class="btn btn-custom">Xem thêm</a>
                 </div>
             </div>
             <div class="row movie-hot">
@@ -211,12 +213,12 @@
                 <!-- Movie item end -->
 
                 <div class="btn-control">
-                    <button type="button" class="btn btn-custom">
+                    <a type="button" class="btn btn-custom" href="#">
                         <img src="assets/icons/prev.svg" alt="prev" height="27.2" width="27.2">
-                    </button>
-                    <button type="button" class="btn btn-custom">
+                    </a>
+                    <a type="button" class="btn btn-custom" href="#">
                         <img src="assets/icons/next.svg" alt="next" height="27.2" width="27.2">
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -228,9 +230,13 @@
                 <div class="col-lg-8 col-12">
                     <!-- Phim bộ -->
                     <div class="row pt-3">
-                        <h5 class="title">Phim bộ
-                            <img src="assets/icons/series.svg" alt="Phim bộ" height="27.2" width="27.2">
-                        </h5>
+                        <div class="movie-control">
+                            <h5 class="title">Phim bộ
+                                <img src="assets/icons/series.svg" alt="Phim bộ" height="27.2" width="27.2">
+                            </h5>
+
+                            <a type="button" class="btn btn-custom">Xem thêm</a>
+                        </div>
                         <div class="movie-series">
                             <!-- Movie item -->
                             <script>addMovieItemSeries();</script>
@@ -240,9 +246,13 @@
 
                     <!-- Phim lẻ -->
                     <div class="row pt-3">
-                        <h5 class="title">Phim lẻ
-                            <img src="assets/icons/movie.svg" alt="Phim lẻ" height="27.2" width="27.2">
-                        </h5>
+                        <div class="movie-control">
+                            <h5 class="title">Phim lẻ
+                                <img src="assets/icons/movie.svg" alt="Phim lẻ" height="27.2" width="27.2">
+                            </h5>
+
+                            <a type="button" class="btn btn-custom">Xem thêm</a>
+                        </div>
 
                         <div class="movie-single">
                             <!-- Movie item -->
@@ -253,9 +263,13 @@
 
                     <!-- Phim hoạt hình -->
                     <div class="row pt-3">
-                        <h5 class="title">Phim hoạt hình
-                            <img src="assets/icons/cartoon.svg" alt="Phim hoạt hình" height="27.2" width="27.2">
-                        </h5>
+                        <div class="movie-control">
+                            <h5 class="title">Phim hoạt hình
+                                <img src="assets/icons/cartoon.svg" alt="Phim hoạt hình" height="27.2" width="27.2">
+                            </h5>
+
+                            <a type="button" class="btn btn-custom">Xem thêm</a>
+                        </div>
 
                         <div class="movie-cartoon">
                             <!-- Movie item -->
@@ -266,13 +280,19 @@
 
                     <!-- TV Shows -->
                     <div class="row py-3">
-                        <h5 class="title">TV Shows
-                            <img src="assets/icons/tv-shows.svg" alt="TV Shows" height="27.2" width="27.2">
-                        </h5>
+                        <div class="movie-control">
+                            <h5 class="title">TV Shows
+                                <img src="assets/icons/tv-shows.svg" alt="TV Shows" height="27.2" width="27.2">
+                            </h5>
 
-                        <!-- Movie item -->
-                        <script>addMovieItemTVShows();</script>
-                        <!-- Movie item end -->
+                            <a type="button" class="btn btn-custom" href="#">Xem thêm</a>
+                        </div>
+
+                        <div class="tv-shows">
+                            <!-- Movie item -->
+                            <script>addMovieItemTVShows();</script>
+                            <!-- Movie item end -->
+                        </div>
                     </div>
                 </div>
 

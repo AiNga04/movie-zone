@@ -7,15 +7,3 @@ document.getElementById("check-filter").addEventListener("change", function () {
     check.classList.remove("active");
   }
 });
-
-/*======== Chỉ hiển thị 16 phim =========*/
-function show16Items() {
-  let items = document.querySelectorAll("#series");
-  items.forEach((item, index) => {
-    if (index >= 16) {
-      item.classList.add("hidden");
-    } else {
-      item.classList.remove("hidden");
-    }
-  });
-}

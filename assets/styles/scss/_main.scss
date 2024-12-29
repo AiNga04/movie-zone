@@ -1,13 +1,22 @@
 /*============= Common =============*/
 .title {
   color: #ff4e50;
-  font-style: 2rem;
+  padding: 10px;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
-.hidden {
-  display: none;
+.movie-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .btn-custom {
+    color: #fff;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  }
 }
+
 /*============= Carousel =============*/
 #movieCarousel {
   .carousel-item {
@@ -238,8 +247,8 @@
   gap: 10px;
 }
 
-/*============= TV Shows =============*/
-.list-tv-shows {
+/*============= TV Show =============*/
+.list-tv-show {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -249,7 +258,7 @@
 .list-cartoon,
 .list-series,
 .list-single,
-.list-tv-shows {
+.list-tv-show {
   .movie-item {
     width: 100%;
     border-radius: 5px;
@@ -306,7 +315,7 @@
   .list-cartoon,
   .list-series,
   .list-single,
-  .list-tv-shows {
+  .list-tv-show {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -317,7 +326,7 @@
   .list-cartoon,
   .list-series,
   .list-single,
-  .list-tv-shows {
+  .list-tv-show {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
