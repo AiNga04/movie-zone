@@ -979,7 +979,7 @@ function addMovieItemHot() {
 
   movies.forEach((movie) => {
     htmlContent += `
-      <div class="movie-item">
+      <a href="./movie-detail.html" class="movie-item">
         <span class="movie-tag">${movie.tag}</span>
         <div class="movie-image">
           <img src="${movie.imgSrc}" alt="${movie.alt}">
@@ -991,7 +991,7 @@ function addMovieItemHot() {
           <h4 class="name-vi">${movie.nameVi}</h4>
           <p class="name-en">${movie.nameEn}</p>
         </div>
-      </div>
+      </a>
     `;
   });
 
@@ -1010,7 +1010,7 @@ function add16MovieItems(type) {
 
   sortedMovies.forEach((movie) => {
     htmlContent += `
-    <div class="movie-item col-md-3 col-4 p-0">
+    <a href="./movie-detail.html" class="movie-item col-md-3 col-4 p-0">
       <span class="movie-tag">${movie.tag}</span>
       <div class="movie-image">
         <img src="${movie.imgSrc}" alt="${movie.alt}">
@@ -1022,7 +1022,7 @@ function add16MovieItems(type) {
         <h4 class="name-vi">${movie.nameVi}</h4>
         <p class="name-en">${movie.nameEn}</p>
       </div>
-    </div>
+    </a>
   `;
   });
 
@@ -1039,7 +1039,7 @@ function addAllMovieItems(type) {
 
   sortedMovies.forEach((movie) => {
     htmlContent += `
-    <div class="movie-item col-md-3 col-4 p-0">
+    <a href="./movie-detail.html" class="movie-item col-md-3 col-4 p-0">
       <span class="movie-tag">${movie.tag}</span>
       <div class="movie-image">
         <img src="${movie.imgSrc}" alt="${movie.alt}">
@@ -1051,7 +1051,7 @@ function addAllMovieItems(type) {
         <h4 class="name-vi">${movie.nameVi}</h4>
         <p class="name-en">${movie.nameEn}</p>
       </div>
-    </div>
+    </a>
   `;
   });
 
@@ -1076,6 +1076,9 @@ function addMovieItemTVShows() {
   add16MovieItems("tv-show");
 }
 // show all movie items
+function addAllMovieItemHot() {
+  addAllMovieItems("hot");
+}
 function addAllMovieItemSeries() {
   addAllMovieItems("series");
 }
@@ -1099,7 +1102,7 @@ function addTopViews() {
 
   sortedMovies.forEach((movie) => {
     htmlContent += `
-        <div class="row item-view">
+        <a href="./movie-detail.html" class="row item-view">
             <div class="col-3 p-0 left">
                 <img src="${movie.imgSrc}" alt="${movie.alt}" class="img-fluid"> <!-- Sửa thành imgSrc -->
             </div>
@@ -1112,7 +1115,7 @@ function addTopViews() {
                     <div class="year">${movie.year}</div>
                 </div>
             </div>
-        </div>`;
+        </a>`;
   });
 
   htmlContent += "</div>";

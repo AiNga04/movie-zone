@@ -128,7 +128,7 @@ body {
 /*============= Common =============*/
 .title {
   color: #ff4e50;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 1.7rem;
   font-weight: bold;
 }
@@ -137,10 +137,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 }
 .movie-control .btn-custom {
   color: #fff;
+  padding: 5px 20px;
+  border-radius: 999px;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /*============= Carousel =============*/
@@ -308,6 +320,13 @@ body {
   }
 }
 /* left */
+/*============= Phim hot =============*/
+.list-hot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
 /*============= Phim bộ =============*/
 .list-series {
   display: grid;
@@ -338,6 +357,7 @@ body {
 
 /*============= Commin main =============*/
 .list-cartoon .movie-item,
+.list-hot .movie-item,
 .list-series .movie-item,
 .list-single .movie-item,
 .list-tv-show .movie-item {
@@ -348,6 +368,7 @@ body {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px, rgba(60, 64, 67, 0.15) 0px 1px 3px;
 }
 .list-cartoon .movie-item .movie-tag,
+.list-hot .movie-item .movie-tag,
 .list-series .movie-item .movie-tag,
 .list-single .movie-item .movie-tag,
 .list-tv-show .movie-item .movie-tag {
@@ -360,6 +381,7 @@ body {
   background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 }
 .list-cartoon .movie-item .movie-image img,
+.list-hot .movie-item .movie-image img,
 .list-series .movie-item .movie-image img,
 .list-single .movie-item .movie-image img,
 .list-tv-show .movie-item .movie-image img {
@@ -369,6 +391,7 @@ body {
   border-radius: 10px 10px 0 0;
 }
 .list-cartoon .movie-item .movie-info,
+.list-hot .movie-item .movie-info,
 .list-series .movie-item .movie-info,
 .list-single .movie-item .movie-info,
 .list-tv-show .movie-item .movie-info {
@@ -381,6 +404,7 @@ body {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 .list-cartoon .movie-item .movie-name,
+.list-hot .movie-item .movie-name,
 .list-series .movie-item .movie-name,
 .list-single .movie-item .movie-name,
 .list-tv-show .movie-item .movie-name {
@@ -388,6 +412,7 @@ body {
   margin-bottom: 5px;
 }
 .list-cartoon .movie-item .movie-name h4,
+.list-hot .movie-item .movie-name h4,
 .list-series .movie-item .movie-name h4,
 .list-single .movie-item .movie-name h4,
 .list-tv-show .movie-item .movie-name h4 {
@@ -395,6 +420,7 @@ body {
   color: #ff8c00;
 }
 .list-cartoon .movie-item .movie-name p,
+.list-hot .movie-item .movie-name p,
 .list-series .movie-item .movie-name p,
 .list-single .movie-item .movie-name p,
 .list-tv-show .movie-item .movie-name p {
@@ -469,6 +495,30 @@ body {
 }
 .top-view .list-item .item-view .right .year {
   color: #ccc;
+}
+
+/*============= Breadcrumb =============*/
+.breadcrumb-box {
+  padding: 0;
+  color: #f8f9fa;
+}
+.breadcrumb-box .breadcrumb-nav {
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.breadcrumb-box .breadcrumb-nav .item {
+  padding: 0 10px 0 0;
+  list-style: none;
+}
+
+/*============= Movie detail =============*/
+.movie-detail .img-detail img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .note {

@@ -4,7 +4,7 @@ function addNavbar() {
         <nav class="navbar navbar-expand-lg bg-dark shadow-sm sticky-top">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand text-warning fw-bold" href="#">MovieZone</a>
+            <a class="navbar-brand text-warning fw-bold" href="./">MovieZone</a>
 
             <!-- Mobile toggle button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -24,7 +24,7 @@ function addNavbar() {
 
                 <!-- Login/Sign-up buttons -->
                 <div class="auth-buttons div-order">
-                    <a href="#" class="btn btn-outline-light me-2 text-center">
+                    <a href="sign-up.html" class="btn btn-outline-light me-2 text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                             class="bi bi-box-arrow-in-right me-2" viewBox="0 0 18 18">
                             <path fill-rule="evenodd"
@@ -33,7 +33,7 @@ function addNavbar() {
                                 d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
                         </svg>
                         Đăng nhập</a>
-                    <a href="#" class="btn btn-warning">
+                    <a href="./sign-in.html" class="btn btn-warning">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                             class="bi bi-person-plus-fill me-2" viewBox="0 0 18 18">
                             <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -76,19 +76,19 @@ function addNavbarHeader() {
                     <div class="collapse navbar-collapse" id="navbarTogglerMovie">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Trang chủ</a>
+                                <a class="nav-link active text-white" aria-current="page" href="./">Trang chủ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Phim bộ</a>
+                                <a class="nav-link text-white" href="./list-series.html">Phim bộ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Phim lẻ</a>
+                                <a class="nav-link text-white" href="./list-single.html">Phim lẻ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Hoạt hình</a>
+                                <a class="nav-link text-white" href="./list-cartoon.html">Hoạt hình</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">TV Shows</a>
+                                <a class="nav-link text-white" href="./list-tv-show.html">TV Shows</a>
                             </li>
                             <!-- Dropdown for Genres -->
                             <li class="nav-item dropdown">

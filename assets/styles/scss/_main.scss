@@ -1,7 +1,7 @@
 /*============= Common =============*/
 .title {
   color: #ff4e50;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 1.7rem;
   font-weight: bold;
 }
@@ -10,11 +10,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 
   .btn-custom {
     color: #fff;
+    padding: 5px 20px;
+    border-radius: 999px;
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /*============= Carousel =============*/
@@ -226,6 +238,13 @@
   }
 }
 /* left */
+/*============= Phim hot =============*/
+.list-hot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
 /*============= Phim bộ =============*/
 .list-series {
   display: grid;
@@ -256,6 +275,7 @@
 
 /*============= Commin main =============*/
 .list-cartoon,
+.list-hot,
 .list-series,
 .list-single,
 .list-tv-show {
@@ -386,6 +406,35 @@
           color: #ccc;
         }
       }
+    }
+  }
+}
+
+/*============= Breadcrumb =============*/
+.breadcrumb-box {
+  padding: 0;
+  color: #f8f9fa;
+  .breadcrumb-nav {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .item {
+      padding: 0 10px 0 0;
+      list-style: none;
+    }
+  }
+}
+
+/*============= Movie detail =============*/
+.movie-detail {
+  .img-detail {
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
     }
   }
 }
