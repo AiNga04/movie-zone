@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  width: 100%;
 
   .btn-custom {
     color: #fff;
@@ -355,6 +356,7 @@ a:hover {
 
 /* right */
 .top-view {
+  padding: 0;
   .row.control {
     display: flex;
     justify-content: space-between;

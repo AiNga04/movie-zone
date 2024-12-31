@@ -977,7 +977,7 @@ function addMovieItemHot() {
     .filter((movie) => movie.types.includes("hot"))
     .sort((a, b) => b.views - a.views);
 
-  movies.forEach((movie) => {
+  sortedMovies.forEach((movie) => {
     htmlContent += `
       <a href="./movie-detail.html" class="movie-item">
         <span class="movie-tag">${movie.tag}</span>
