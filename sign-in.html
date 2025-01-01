@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="website xem phim, moviezone, movie zone">
     <meta name="description" content="website xem phim hd">
-    <meta name="author" content="Ái Nga">
+    <meta name="sign-inor" content="Ái Nga">
     <title>Xem Phim Online</title>
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
@@ -37,8 +37,33 @@
     <!-- Header end -->
 
     <!-- Main -->
-    <main class="background container">
-
+    <main class="background container sign-in">
+        <div class="content row">
+            <div class="col-lg-4 m-md-auto sign-in-box">
+                <div class="sign-in-header">
+                    <h2>Đăng Ký</h2>
+                    <p>Tạo tài khoản mới để bắt đầu trải nghiệm</p>
+                </div>
+                <div class="sign-in-form">
+                    <form action="/sign-in" method="POST">
+                        <input type="text" name="fullname" placeholder="Họ và tên của bạn" required autofocus>
+                        <input type="email" name="email" placeholder="Email của bạn" required>
+                        <input type="password" name="password" placeholder="Mật khẩu của bạn" required>
+                        <input type="password" name="confirm_password" placeholder="Xác nhận mật khẩu" required>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="terms" name="terms" required="">
+                            <label class="form-check-label" for="terms">
+                                Tôi đồng ý với <a href="policy.html">điều khoản và chính sách</a>.
+                            </label>
+                        </div>
+                        <button type="submit">Đăng Ký</button>
+                    </form>
+                </div>
+                <div class="sign-in-footer">
+                    <a href="/sign-up.html">Đã có tài khoản? Đăng nhập ngay</a>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Main end -->
 
