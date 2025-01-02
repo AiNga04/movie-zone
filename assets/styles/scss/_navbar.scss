@@ -15,9 +15,10 @@ $placeholder-color: rgba(245, 245, 245, 0.6);
     font-size: 1.8rem;
     font-weight: bold;
     color: $primary-color;
+    transition: transform 0.3s ease;
 
     &:hover {
-      color: lighten($primary-color, 10%);
+      transform: scale(1.05);
     }
   }
 

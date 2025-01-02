@@ -39,7 +39,7 @@
     <!-- Main -->
     <main class="background container">
         <!-- Lọc phim -->
-        <div class="filter mb-3">
+        <div class="filter">
             <div class="row top">
                 <div class="filter-box">
                     <div class="filter-label-container">
@@ -59,7 +59,7 @@
                     <select class="select" name="type" id="type">
                         <option value="all">Loại phim</option>
                         <option value="single">Phim lẻ</option>
-                        <option value="series">Có thể bạn sẽ thích</option>
+                        <option value="series">Phim bộ</option>
                         <option value="cartoon">Phim hoạt hình</option>
                         <option value="cartoon">TV Shows</option>
                     </select>
@@ -140,58 +140,20 @@
         <!-- Movie main -->
         <div class="container movie-main">
             <div class="row">
-                <div class="col-12 breadcrumb-box">
-                    <nav>
-                        <ul class="breadcrumb-nav">
-                            <li class="item"><a href=""><i class="fa-solid fa-house"></i> Trang chủ</a></li>
-                            <li class="item"><a href=""><i class="fa-solid fa-fire"></i> Có thể bạn sẽ thích</a></li>
-                            <li class="item"><a href=""><i class="fa-solid fa-asterisk"></i> Chi Tiết Phim</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
-            <div class="row">
                 <!-- left -->
                 <div class="col-lg-8 col-12">
-                    <div class="row movie-detail">
-                        <div class="col-4 img-detail">
-                            <img src="${movie.imgSrc}" alt="${movie.alt}">
-                            <div class="btn-play">
-                                <a href="#episode" class="btn btn-custom">Tập phim</a>
-                                <a href="./movie-play.html" class="btn btn-custom">Xem phim</a>
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="movie-name">
-                                <h4 class="name-vi title">${movie.nameVi}</h4>
-                                <p class="name-en">${movie.nameEn}</p>
-                            </div>
-                            <div class="movie-info">
-                                <p class="movie-description">${movie.description}</p>
-                                <p class="movie-year">${movie.year}</p>
-                                <p class="movie-time">${movie.time}</p>
-                                <p class="movie-episode">${movie.episode}</p>
-                                <p class="movie-country">${movie.country}</p>
-                                <p class="movie-tag">${movie.tag}</p>
-                                <p class="movie-rating">${movie.rating}</p>
-                                <p class="movie-types">${movie.types}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Có thể bạn sẽ thích -->
                     <div class="row pt-3">
                         <div class="movie-control">
-                            <h5 class="title">Có thể bạn sẽ thích
-                                <img src="assets/icons/series.svg" alt="Có thể bạn sẽ thích" height="27.2" width="27.2">
+                            <h5 class="title">Phim hoạt hình
+                                <img src="assets/icons/cartoon.svg" alt="Phim hoạt hình" height="27.2" width="27.2">
                             </h5>
 
-                            <a href="./list-series.html" type="button" class="btn btn-custom">Xem thêm</a>
+                            <a href="./genres.html" type="button" class="btn btn-custom">Xem thêm</a>
                         </div>
-                        <div class="movie-series">
+
+                        <div class="movie-cartoon">
                             <!-- Movie item -->
-                            <script>addAllMovieItemSeries();</script>
+                            <script>addAllMovieItemCartoon();</script>
                             <!-- Movie item end -->
                         </div>
                     </div>

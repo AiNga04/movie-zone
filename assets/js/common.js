@@ -96,13 +96,19 @@ function addNavbarHeader() {
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Thể loại
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Hành động</a></li>
-                                    <li><a class="dropdown-item" href="#">Tình cảm</a></li>
-                                    <li><a class="dropdown-item" href="#">Kinh dị</a></li>
-                                    <li><a class="dropdown-item" href="#">Viễn tưởng</a></li>
-                                    <li><a class="dropdown-item" href="#">Hài hước</a></li>
-                                    <li><a class="dropdown-item" href="#">Phim cổ trang</a></li>
+                                <ul class="dropdown-menu" id="genreDropdown">
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Hành động</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Hài</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Lãng mạn</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Kinh dị</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Khoa học viễn tưởng</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Tâm lý</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Kỳ ảo</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Phiêu lưu</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Hoạt hình</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Chương trình thực tế</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Hình sự</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Âm nhạc</a></li>
                                 </ul>
                             </li>
                             <!-- Dropdown for Countries -->
@@ -112,13 +118,13 @@ function addNavbarHeader() {
                                     Quốc gia
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Việt Nam</a></li>
-                                    <li><a class="dropdown-item" href="#">Hàn Quốc</a></li>
-                                    <li><a class="dropdown-item" href="#">Mỹ</a></li>
-                                    <li><a class="dropdown-item" href="#">Trung Quốc</a></li>
-                                    <li><a class="dropdown-item" href="#">Nhật Bản</a></li>
-                                    <li><a class="dropdown-item" href="#">Thái Lan</a></li>
-                                    <li><a class="dropdown-item" href="#">Âu - Mỹ</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Việt Nam</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Hàn Quốc</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Mỹ</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Trung Quốc</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Nhật Bản</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Anh</a></li>
+                                    <li><a class="dropdown-item" id="genres-item" value="" href="#">Tây Ban Nha</a></li>
                                 </ul>
                             </li>
                         </ul>
