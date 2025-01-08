@@ -143,8 +143,8 @@
                 <div class="col-12 breadcrumb-box">
                     <nav>
                         <ul class="breadcrumb-nav">
+                            <li class="item"><a href=""><i class="fa-solid fa-fire"></i> Hoạt hình</a></li>
                             <li class="item"><a href=""><i class="fa-solid fa-house"></i> Trang chủ</a></li>
-                            <li class="item"><a href=""><i class="fa-solid fa-fire"></i> Có thể bạn sẽ thích</a></li>
                             <li class="item"><a href=""><i class="fa-solid fa-asterisk"></i> Chi Tiết Phim</a></li>
                         </ul>
                     </nav>
@@ -155,14 +155,19 @@
                 <!-- left -->
                 <div class="col-lg-8 col-12">
                     <div class="row movie-detail">
-                        <div class="col-4 img-detail">
-                            <img src="${movie.imgSrc}" alt="${movie.alt}">
+                        <div class="col-lg-5 col-12 img-detail">
+                            <!-- <img src="${movie.imgSrc}" alt="${movie.alt}"> -->
+                            <img src="./assets/images/movie/khi-dien-thoai-do-chuong-thumb.jpg" alt="${movie.alt}">
                             <div class="btn-play">
-                                <a href="#episode" class="btn btn-custom">Tập phim</a>
-                                <a href="./movie-play.html" class="btn btn-custom">Xem phim</a>
+                                <button class="btn btn-custom"><a href="#episode"><i class="fa-solid fa-angle-down"></i>
+                                        Tập
+                                        phim</a></button>
+                                <button class="btn btn-custom"><a href="./movie-play.html"><i
+                                            class="fa-solid fa-play"></i> Xem
+                                        phim</a></button>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-7 col-12">
                             <div class="movie-name">
                                 <h4 class="name-vi title">${movie.nameVi}</h4>
                                 <p class="name-en">${movie.nameEn}</p>
@@ -183,7 +188,7 @@
                     <!-- Có thể bạn sẽ thích -->
                     <div class="row pt-3">
                         <div class="movie-control">
-                            <h5 class="title">Có thể bạn sẽ thích
+                            <h5 class="title">Xem thêm
                                 <img src="assets/icons/series.svg" alt="Có thể bạn sẽ thích" height="27.2" width="27.2">
                             </h5>
 

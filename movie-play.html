@@ -59,7 +59,7 @@
                     <select class="select" name="type" id="type">
                         <option value="all">Loại phim</option>
                         <option value="single">Phim lẻ</option>
-                        <option value="series">Phim bộ</option>
+                        <option value="series">Có thể bạn sẽ thích</option>
                         <option value="cartoon">Phim hoạt hình</option>
                         <option value="cartoon">TV Shows</option>
                     </select>
@@ -73,9 +73,13 @@
                         <option value="romance">Lãng mạn</option>
                         <option value="horror">Kinh dị</option>
                         <option value="sci-fi">Khoa học viễn tưởng</option>
-                        <option value="thriller">Kinh dị tâm lý</option>
-                        <option value="mystery">Thần bí</option>
+                        <option value="thriller">Tâm lý</option>
+                        <option value="mystery">Kỳ ảo</option>
                         <option value="adventure">Phiêu lưu</option>
+                        <option value="adventure">Hoạt hình</option>
+                        <option value="adventure">Chương trình thực tế</option>
+                        <option value="adventure">Hình sự</option>
+                        <option value="adventure">Âm nhạc</option>
                     </select>
                 </div>
 
@@ -140,8 +144,8 @@
                     <nav>
                         <ul class="breadcrumb-nav">
                             <li class="item"><a href=""><i class="fa-solid fa-house"></i> Trang chủ</a></li>
-                            <li class="item"><a href=""><i class="fa-solid fa-fire"></i> Phim bộ</a></li>
-                            <li class="item"><a href=""><i class="fa-solid fa-asterisk"></i> Chi Tiết Phim</a></li>
+                            <li class="item"><a href=""><i class="fa-solid fa-fire"></i> Hoạt hình</a></li>
+                            <li class="item"><a href=""><i class="fa-solid fa-asterisk"></i> Xem phim</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -150,38 +154,22 @@
             <div class="row">
                 <!-- left -->
                 <div class="col-lg-8 col-12">
-                    <div class="row movie-detail">
-                        <div class="col-4 img-detail">
-                            <img src="./assets/images/movie/khi-dien-thoai-do-chuong-thumb.jpg" alt="Phim">
-                            <!-- <img src="${movie.imgSrc}" alt="${movie.alt}"> -->
-                            <div class="btn-play">
-                                <a href="#episode" class="btn btn-custom">Tập phim</a>
-                                <a href="./movie-play.html" class="btn btn-custom">Xem phim</a>
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="movie-name">
-                                <h4 class="name-vi title">${movie.nameVi}</h4>
-                                <p class="name-en">${movie.nameEn}</p>
-                            </div>
-                            <div class="movie-info">
-                                <p class="movie-description">${movie.description}</p>
-                                <p class="movie-year">${movie.year}</p>
-                                <p class="movie-time">${movie.time}</p>
-                                <p class="movie-episode">${movie.episode}</p>
-                                <p class="movie-country">${movie.country}</p>
-                                <p class="movie-tag">${movie.tag}</p>
-                                <p class="movie-rating">${movie.rating}</p>
-                                <p class="movie-types">${movie.types}</p>
-                            </div>
+                    <div class="row movie-play">
+                        <div class="video-container">
+                            <iframe width="100%" height="450"
+                                src="https://www.youtube.com/embed/FXgdEb4kPR4?si=7y40YOVSzBcGc0Ge"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                         </div>
                     </div>
 
-                    <!-- Phim bộ -->
+                    <!-- Có thể bạn sẽ thích -->
                     <div class="row pt-3">
                         <div class="movie-control">
-                            <h5 class="title">Có thể bạn sẽ thích
-                                <img src="assets/icons/series.svg" alt="Phim bộ" height="27.2" width="27.2">
+                            <h5 class="title">Xem thêm
+                                <img src="assets/icons/series.svg" alt="Có thể bạn sẽ thích" height="27.2" width="27.2">
                             </h5>
 
                             <a href="./list-series.html" type="button" class="btn btn-custom">Xem thêm</a>

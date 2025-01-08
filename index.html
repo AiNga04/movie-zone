@@ -22,6 +22,7 @@
 </head>
 
 <body style="background: #222438;">
+
     <script>addNavbar();</script>
 
     <!-- Header -->
@@ -78,12 +79,12 @@
                 </div>
 
                 <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel"
+                <button class="carousel-control-prev btn-custom" type="button" data-bs-target="#movieCarousel"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel"
+                <button class="carousel-control-next btn-custom" type="button" data-bs-target="#movieCarousel"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -205,16 +206,18 @@
             </div>
             <div class="row movie-hot">
                 <!-- Movie item -->
-                <script>addMovieItemHot();</script>
+                <div class="box-list-hot">
+                    <script>addMovieItemHot();</script>
+                </div>
                 <!-- Movie item end -->
 
                 <div class="btn-control">
-                    <a type="button" class="btn btn-custom" href="#">
+                    <button class="btn btn-custom" id="btn-prev">
                         <img src="assets/icons/prev.svg" alt="prev" height="27.2" width="27.2">
-                    </a>
-                    <a type="button" class="btn btn-custom" href="#">
+                    </button>
+                    <button class="btn btn-custom" id="btn-next">
                         <img src="assets/icons/next.svg" alt="next" height="27.2" width="27.2">
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>

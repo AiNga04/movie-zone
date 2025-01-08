@@ -219,7 +219,6 @@ a:hover {
 }
 .filter .select:hover {
   cursor: pointer;
-  background: rgba(129, 129, 168, 0.5019607843);
 }
 .filter button {
   padding: 2px;
@@ -248,12 +247,18 @@ a:hover {
 .movie-list {
   display: flex;
   gap: 10px;
+  scroll-behavior: smooth;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box-list-hot {
   overflow: hidden;
 }
 
 .movie-hot {
   padding: 10px;
   color: #f8f9fa;
+  position: relative;
 }
 .movie-hot .movie-item {
   width: 210px;
@@ -310,12 +315,19 @@ a:hover {
   color: #f8f9fa;
 }
 .movie-hot .btn-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
+  z-index: 0;
 }
 .movie-hot .btn-control .btn-custom {
+  border-radius: 50%;
+  padding: 1px;
   color: #fff;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  z-index: 2;
 }
 
 /* Responsive */
@@ -588,10 +600,61 @@ a:hover {
 }
 
 /*============= Movie detail =============*/
+.movie-detail .img-detail {
+  max-height: 450px;
+  position: relative;
+}
 .movie-detail .img-detail img {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
+  border-radius: 10px;
+}
+.movie-detail .img-detail .btn-play {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.movie-detail .img-detail .btn-play .btn-custom {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+@media (max-width: 991.98px) {
+  .movie-detail .img-detail {
+    max-height: 800px;
+  }
+  .movie-detail .img-detail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 767.98px) {
+  .movie-detail .img-detail {
+    max-height: 500px;
+  }
+  .movie-detail .img-detail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+/*============= Movie play =============*/
+.movie-play .video-container {
+  border-radius: 10px;
+}
+.movie-play .video-container iframe {
   border-radius: 10px;
 }
 
@@ -621,6 +684,13 @@ a:hover {
     font-size: 10px !important;
   }
 }
+.carousel-inner .btn-custom {
+  border-radius: 50%;
+  padding: 1px;
+  color: #fff;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
 /* Filter Box */
 .filter-box {
   display: flex;

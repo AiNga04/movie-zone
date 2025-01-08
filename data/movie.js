@@ -1336,5 +1336,3 @@ function addTopViews() {
 
   document.write(htmlContent);
 }
-
-//genres list

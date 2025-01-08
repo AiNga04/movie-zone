@@ -107,7 +107,6 @@ a:hover {
 
   .select:hover {
     cursor: pointer;
-    background: #8181a880;
   }
 
   button {
@@ -139,12 +138,18 @@ a:hover {
 .movie-list {
   display: flex;
   gap: 10px;
+  scroll-behavior: smooth;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box-list-hot {
   overflow: hidden;
 }
 
 .movie-hot {
   padding: 10px;
   color: #f8f9fa;
+  position: relative;
 
   .movie-item {
     width: 210px;
@@ -209,11 +214,18 @@ a:hover {
   }
 
   .btn-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
+    z-index: 0;
     .btn-custom {
+      border-radius: 50%;
+      padding: 1px;
       color: #fff;
       background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+      z-index: 2;
     }
   }
 }
@@ -499,10 +511,69 @@ a:hover {
 /*============= Movie detail =============*/
 .movie-detail {
   .img-detail {
+    max-height: 450px;
+    position: relative;
     img {
       width: 100%;
-      height: 400px;
+      height: 100%;
       object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .btn-play {
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .btn-custom {
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .movie-detail {
+    .img-detail {
+      max-height: 800px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .movie-detail {
+    .img-detail {
+      max-height: 500px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+/*============= Movie play =============*/
+.movie-play {
+  .video-container {
+    border-radius: 10px;
+    iframe {
       border-radius: 10px;
     }
   }

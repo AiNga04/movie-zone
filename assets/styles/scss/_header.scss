@@ -26,3 +26,12 @@
     font-size: 10px !important;
   }
 }
+
+.carousel-inner {
+  .btn-custom {
+    border-radius: 50%;
+    padding: 1px;
+    color: #fff;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  }
+}

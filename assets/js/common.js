@@ -15,12 +15,12 @@ function addNavbar() {
             <!-- Navbar content -->
             <div class="collapse navbar-collapse" id="navbarContent">
                 <!-- Search bar in center -->
-                <form class="search-form mx-auto" role="search">
-                    <input class="form-control" type="search" placeholder="Tìm phim, diễn viên..." aria-label="Search">
-                    <button class="btn-search" type="submit" aria-label="Search">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
+                        <form class="search-form mx-auto" role="search" onsubmit="searchMovies(event)">
+                            <input id="search-input" class="form-control" type="search" placeholder="Tìm phim..." aria-label="Search">
+                            <button class="btn-search" type="submit" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
 
                 <!-- Login/Sign-up buttons -->
                 <div class="auth-buttons div-order">
