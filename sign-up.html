@@ -44,10 +44,12 @@
                     <h2>Đăng nhập</h2>
                     <p>Chào mừng bạn đến với Website Xem Phim MovieZone</p>
                 </div>
-                <div class="sign-up-form">
+                <div class="sign-up-form" id="form-sign-up">
                     <form action="/sign-up" method="POST">
-                        <input type="email" name="email" placeholder="Email của bạn" required autofocus>
-                        <input type="password" name="password" placeholder="Mật khẩu của bạn" required>
+                        <input type="email" name="email" id="email" placeholder="Email của bạn" value="" required
+                            autofocus>
+                        <input type="password" name="password" id="password" value="" placeholder="Mật khẩu của bạn"
+                            required>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="remember" name="remember">
                             <label class="form-check-label" for="remember">Nhớ mật khẩu</label>
@@ -73,6 +75,7 @@
     <!-- Bootstrap JS -->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
     <script src="./assets/js/index.js" defer></script>
+    <script src="./assets/js/value.js" defer></script>
 </body>
 
 </html>
